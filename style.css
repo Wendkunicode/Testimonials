@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    background:hsl(210, 46%, 95%);
+    padding: 120px 20px 90px 20px;
+}
+.daniel{
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-size: 125px;
+    background-position-x:90%;
+    padding: 20px 40px 40px 40px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+.jonathan{
+    background-color: hsl(217, 19%, 35%);
+    padding: 20px 20px 40px 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+.jeanette{
+    background-color:hsl(0, 0%, 100%);
+    padding: 20px 20px 40px 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+.patrick{
+    background-color: hsl(219, 29%, 14%);
+    padding: 20px 20px 40px 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+.kira{
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px 20px 40px 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+.profil{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.title1 :nth-child(1){
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 20px;
+}
+.title1 :nth-child(2){
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 16px;
+    opacity: 50%;
+}
+.intro1{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+.para1{
+    color: hsl(0, 0%, 100%);
+    opacity: 70%;
+}
+.title3 :nth-child(1){
+    color:hsl(217, 19%, 35%);
+    font-weight: 600;
+    font-size: 20px;
+}
+.title3 :nth-child(2){
+    color:hsl(217, 19%, 35%);
+    font-weight: 600;
+    font-size: 16px;
+    opacity: 50%;
+}
+.intro3{
+    color:hsl(217, 19%, 35%);
+    font-weight: 600;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+.para3{
+    color:hsl(217, 19%, 35%);
+    opacity: 70%;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+footer a{
+    text-decoration: none;
+    color:hsl(217, 19%, 35%);
+}
+@media screen and (min-width:900px){
+   .content{
+    width: 70%;
+    margin:0 auto;
+    display:grid;
+    grid-template-rows: 110px 110px 100px 100px 100px 100px 100px;
+    grid-template-columns:80px 80px 80px 80px 80px 60px 70px 70px 90px 105px 105px;
+    grid-gap:2em;
+   }
+   .daniel{
+    grid-row: 1/4;
+    grid-column:1/6 ;
+   }
+   .jonathan{
+    grid-row: 1/4;
+    grid-column:6/9;
+   }
+   .kira{
+    display: flex;
+    flex-direction:column;
+    flex-grow: wrap;
+    grid-row: 1/7;
+    grid-column:9/11;
+   }
+   .jeanette{
+    grid-row: 4/7;
+    grid-column:1/4;
+   }
+   .patrick{
+    grid-row: 4/7;
+    grid-column:4/9;
+   }
+}
